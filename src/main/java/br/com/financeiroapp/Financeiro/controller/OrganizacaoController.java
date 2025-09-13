@@ -14,7 +14,7 @@ public class OrganizacaoController {
     @Autowired
     private OrganizacaoService service;
 
-    @PostMapping
+    @PostMapping("/novo-registro")
     public OrganizacaoEntity criar(@RequestBody OrganizacaoDTO dto) {
         return service.criar(dto);
     }
