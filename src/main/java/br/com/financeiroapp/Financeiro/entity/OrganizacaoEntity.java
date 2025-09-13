@@ -8,7 +8,8 @@ import java.util.UUID;
 @Entity(name = "organizacao")
 public class OrganizacaoEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "organizacao_seq")
+    @SequenceGenerator(name = "organizacao_seq", sequenceName = "organizacoes_sequence", allocationSize = 1)
     @Column(name = "id_organizacao")
     private Long id;
 

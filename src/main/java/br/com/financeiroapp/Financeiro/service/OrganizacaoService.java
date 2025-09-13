@@ -21,7 +21,7 @@ public class OrganizacaoService {
         OrganizacaoEntity entity = new OrganizacaoEntity();
         entity.setNome(dto.getNome());
         entity.setQtd_usuarios(dto.getQtd_usuarios());
-        entity.setSituacao(EnSituacaoConta.ATIVA);
+        entity.setSituacao(EnSituacaoConta.ATIVO);
         entity.setGuid(UUID.randomUUID());
         entity.setData_contratacao(new Date());
         entity.setData_ultima_alteracao(new Date());

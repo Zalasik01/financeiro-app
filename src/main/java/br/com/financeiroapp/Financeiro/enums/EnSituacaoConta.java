@@ -1,7 +1,7 @@
 package br.com.financeiroapp.Financeiro.enums;
 
 public enum EnSituacaoConta {
-    ATIVA("ATIVA"),
+    ATIVO("ATIVO"),
     INATIVA("INATIVA"),
     SUSPENSA("SUSPENSA"),
     CANCELADA("CANCELADA");
